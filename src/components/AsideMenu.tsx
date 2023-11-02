@@ -20,7 +20,7 @@ const AsideMenu = () => {
 					<Image src='/assets/icons/close.svg' alt="Hirefy's close button" width={15} height={15} />
 				</button>
 			</div>
-			<ul className={`pl-[27px] pr-[32px] pt-[105px] flex flex-col gap-[20px] border-[1px] border-light-gray`}>
+			<ul className={`pl-[27px] pr-[32px] pt-[105px] flex flex-col gap-[10px] border-[1px] border-light-gray`}>
 				{navigations.map((navigation, index) => {
 					return <NavItem {...navigation} key={index} />;
 				})}
