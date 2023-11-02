@@ -17,15 +17,15 @@ const NavItem = ({ icon, text, textColor, children, link, fontWeight = 'font-[60
 	return (
 		<li className={`${className} transition-all`}>
 			{!children ? (
-				<Link href={link!} className={`flex items-center text-[14px] ${textColor} ${fontWeight} gap-[15px] h-[19px] hover:brightness-150`}>
+				<Link href={link!} className={`flex items-center text-[14px] ${textColor} ${fontWeight} h-[34px] hover:brightness-150`}>
 					{icon ? <Image src={icon} alt="Hirefy's element icon" width={15} height={13.577} /> : null}
 					{text}
 				</Link>
 			) : (
-				<div className={`flex flex-col`}>
+				<div className={`flex flex-col ${isOpen ? 'text-blue' : textColor}`}>
 					<button
 						onClick={() => setIsOpen(!isOpen)}
-						className={`flex items-center text-[14px] w-full ${textColor} ${fontWeight} gap-[9px] h-[19.084px] rounded-[5px] bg-light-gray relative`}
+						className={`flex items-center text-[14px] w-full ${fontWeight} gap-[9px] h-[34px] rounded-[5px] bg-light-gray relative`}
 					>
 						{icon ? <Image src={icon} alt="Hirefy's element icon" width={15} height={13.577} /> : null}
 						{text}
