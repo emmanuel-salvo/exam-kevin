@@ -17,7 +17,7 @@ const NavItem = ({ icon, text, textColor, children, link, fontWeight = 'font-[60
 	return (
 		<li className={`${className} transition-all`}>
 			{!children ? (
-				<Link href={link!} className={`flex items-center text-[14px] ${textColor} ${fontWeight} h-[34px] hover:brightness-150`}>
+				<Link href={link!} className={`flex items-center text-[14px] ${textColor} ${fontWeight} gap-[15px] h-[34px] hover:brightness-150`}>
 					{icon ? <Image src={icon} alt="Hirefy's element icon" width={15} height={13.577} /> : null}
 					{text}
 				</Link>
